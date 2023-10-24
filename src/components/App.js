@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../NavBar";
 
 function NavBar() {
   return (
@@ -8,8 +7,6 @@ function NavBar() {
     </nav>
   );
 }
-
-
 
 function Home() {
   return (
@@ -31,12 +28,9 @@ function About() {
 function App() {
   return (
     <div>
-      <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
-
-
-
+      <NavBar />
+      <Home /> {/* Include the <Home> component here */}
+      <About /> {/* Include the <About> component here */}
     </div>
   );
 }
